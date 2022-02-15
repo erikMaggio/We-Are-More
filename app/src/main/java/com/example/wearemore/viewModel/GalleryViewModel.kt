@@ -1,4 +1,4 @@
-package com.example.wearemore.ui.gallery
+package com.example.wearemore.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
