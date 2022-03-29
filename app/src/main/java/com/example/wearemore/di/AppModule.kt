@@ -3,8 +3,8 @@ package com.example.wearemore.di
 import com.example.wearemore.modal.apiRest.ApiServiceLogin
 import com.example.wearemore.modal.dataSource.DataSourceLogin
 import com.example.wearemore.modal.repository.LoginRepository
-import com.google.android.datatransport.runtime.dagger.Module
-import com.google.android.datatransport.runtime.dagger.Provides
+import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
@@ -13,7 +13,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class AppModule {
+object AppModule {
 
     @Provides
     fun provideRetrofit(): Retrofit {
@@ -31,13 +31,11 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideDataSourceLogin(postLogin:ApiServiceLogin):DataSourceLogin{
-        return DataSourceLogin(postLogin)
+    fun provideRepositoryLogin(apiServiceLogin: DataSourceLogin):LoginRepository{
+        return LoginRepository(apiServiceLogin)
     }
-
-    @Singleton
     @Provides
-    fun provideRepositoryLogin(dataSourceLogin:DataSourceLogin):LoginRepository{
-        return LoginRepository(dataSourceLogin)
+    fun provideDataSource(apiServiceLogin: ApiServiceLogin): DataSourceLogin {
+        return DataSourceLogin(apiServiceLogin)
     }
 }

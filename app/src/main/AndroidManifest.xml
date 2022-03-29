@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wearemore">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".WeAreMoreApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,12 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeAreMore">
         <activity
-            android:name=".MainActivity2"
+            android:name=".ui.activity.MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.WeAreMore.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

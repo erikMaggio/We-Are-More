@@ -1,4 +1,4 @@
-package com.example.wearemore
+package com.example.wearemore.ui.activity
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.wearemore.R
 import com.example.wearemore.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {

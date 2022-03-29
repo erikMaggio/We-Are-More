@@ -1,4 +1,4 @@
-package com.example.wearemore.ui.slideshow
+package com.example.wearemore.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
