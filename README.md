@@ -2,7 +2,7 @@
 
 ## Es una aplicacion para dispositivos moviles que funcione como presentacion, que permita difundir las actividades, incorporar voluntarios y socializar testimonios sobre las acciones que realizan
 
-## Se Consumio una App de ALKEMY.ORG
+## Se Consumio una Api de ALKEMY.ORG
 
 ## Aplicacion en proceso 13/04/22
 
